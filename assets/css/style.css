@@ -1,0 +1,54 @@
+/* Basic lightweight stylesheet for the Contractor Website Template */
+:root{
+  --brand:#0b5a3c;
+  --accent:#f2a654;
+  --muted:#6b7280;
+  --max-width:1100px;
+  --radius:8px;
+  --bg:#ffffff;
+  --text:#0b1720;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--text); background:var(--bg)}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
+.logo img{display:block}
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.site-nav a{color:inherit;text-decoration:none}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.4rem}
+
+.hero{background:linear-gradient(180deg, rgba(11,90,60,0.06), rgba(11,90,60,0.02));padding:3.5rem 0;text-align:center}
+.hero h1{font-size:2rem;margin:0 0 .5rem}
+.hero .lead{color:var(--muted);margin:0 0 1rem}
+.cta-row{display:flex;gap:.75rem;justify-content:center;margin-top:1rem}
+.btn-primary{background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
+.btn-ghost{border:1px solid #ddd;padding:.5rem .9rem;border-radius:6px;text-decoration:none;color:inherit;background:transparent}
+
+.section{padding:2rem 0}
+.grid{display:grid;gap:1rem}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid #eee;padding:1rem;border-radius:var(--radius)}
+.project-card img{width:100%;height:160px;object-fit:cover;border-radius:6px;background:#f5f5f5}
+.muted{color:var(--muted)}
+.contact-form{max-width:600px}
+.contact-form label{display:block;margin-bottom:.75rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.5rem;border:1px solid #ddd;border-radius:6px}
+.form-actions{margin-top:.5rem}
+.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .grid-3{grid-template-columns:1fr}
+  .site-nav{display:none}
+  .nav-toggle{display:inline-block}
+  .site-nav.open{display:block;padding-top:.5rem}
+  .site-nav ul{flex-direction:column;gap:.5rem}
+  .hero h1{font-size:1.5rem}
+}
+
+/* Accessibility helpers */
+a:focus{outline:3px solid rgba(11,90,60,0.15);outline-offset:2px}

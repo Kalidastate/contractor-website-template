@@ -1,58 +1,18 @@
 # Contractor Website Template
 
-A lightweight, responsive, and SEO-friendly static website template designed for construction contractors and small businesses. Built for long-term maintainability with minimal dependencies.
+This repository contains a lightweight static website template for contractors and small businesses.
 
----
+Files added by the template setup:
 
-## Purpose
+- index.html — sample homepage with hero, services, projects, about, and contact sections.
+- about.html, services.html, projects.html, contact.html — simple page stubs.
+- assets/css/style.css — minimal responsive styles.
+- assets/js/main.js — small interactive behaviors (nav toggle, form placeholder).
+- assets/images/logo.svg, project-placeholder.svg — simple SVG placeholders.
 
-This template is created to help quickly build professional business websites for contractors without using heavy frameworks or complex setups.
+Next steps:
+- Replace placeholder content and images with your real content.
+- Connect the contact form to a backend or form service (Formspree, Netlify Forms, etc.).
+- Optionally add a build step (SCSS, image optimization) or CMS integration.
 
-Focus areas:
-- Simplicity
-- Performance
-- SEO friendliness
-- Easy customization
-- Low maintenance
-
----
-
-## Tech Stack
-
-- HTML5
-- CSS3 (Bootstrap optional)
-- Vanilla JavaScript
-- Static hosting (Netlify / GitHub Pages / Cloudflare Pages)
-
----
-
-## Features
-
-- Fully responsive design
-- Clean homepage layout
-- Services section
-- Projects/gallery placeholders
-- About section
-- Contact section with form placeholder
-- WhatsApp/call integration support
-- SEO-ready structure
-- Lightweight and fast loading
-
----
-
-## Folder Structure
-
-```bash
-/
-├── index.html
-├── about.html
-├── services.html
-├── projects.html
-├── contact.html
-│
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│
-└── README.md
+Hosting suggestions: GitHub Pages, Netlify, or Cloudflare Pages.

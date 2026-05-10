@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A lightweight, responsive, and SEO-friendly static website template for construction contractors and small businesses." />
+  <title>Contractor Template — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#0b5a3c">
+  <!-- Structured data (basic localBusiness placeholder) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Contractor Template",
+    "description": "Lightweight contractor website template",
+    "url": "https://example.com",
+    "telephone": "+1-555-555-5555"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">
+        <img src="assets/images/logo.svg" alt="Contractor Template logo" width="160" height="40">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Professional Contracting Services</h1>
+        <p class="lead">Reliable, skilled, and local — we build quality projects on time and on budget.</p>
+        <p class="cta-row">
+          <a class="btn-primary" href="contact.html">Get a Free Quote</a>
+          <a class="btn-ghost" href="projects.html">View Projects</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Our Services</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Residential Construction</h3>
+          <p>New builds, renovations, and additions with a focus on durability and design.</p>
+        </article>
+        <article class="card">
+          <h3>Commercial Work</h3>
+          <p>Storefronts, offices, and light industrial projects delivered on schedule.</p>
+        </article>
+        <article class="card">
+          <h3>Maintenance & Repairs</h3>
+          <p>Fast, reliable maintenance to keep properties in top condition.</p>
+        </article>
+      </div>
+      <!-- FUTURE: link to dynamic service pages and structured service schema -->
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Recent Projects</h2>
+      <p class="muted">Placeholder gallery — add project thumbnails and case studies here.</p>
+      <div class="grid grid-3">
+        <figure class="project-card">
+          <img src="assets/images/project-placeholder.svg" alt="Project placeholder">
+          <figcaption>Project A — Renovation</figcaption>
+        </figure>
+        <figure class="project-card">
+          <img src="assets/images/project-placeholder.svg" alt="Project placeholder">
+          <figcaption>Project B — New build</figcaption>
+        </figure>
+        <figure class="project-card">
+          <img src="assets/images/project-placeholder.svg" alt="Project placeholder">
+          <figcaption>Project C — Commercial</figcaption>
+        </figure>
+      </div>
+      <p class="muted"><!-- FUTURE: connect to CMS or JSON feed for projects --> </p>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>Short company blurb and mission statement. Replace with your company story and team details.</p>
+      <!-- FUTURE: team profiles, certifications, testimonials -->
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h2>Contact</h2>
+      <p>Use the form or reach out directly by phone or WhatsApp.</p>
+      <form id="contactForm" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <p class="form-actions">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </p>
+      </form>
+      <p class="muted">This form is a placeholder — connect it to your backend or service (Formspree, Netlify Forms, or your own API).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Contractor Template. <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+      <p class="muted">Built with accessibility and SEO in mind. <!-- FUTURE: add structured contact and social links --> </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

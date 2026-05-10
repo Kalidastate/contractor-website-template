@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240" role="img" aria-labelledby="phTitle">
+  <title id="phTitle">Project placeholder</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#f6f6f6"/>
+      <stop offset="1" stop-color="#e9e9e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#g)" rx="8"/>
+  <g fill="#bfc7c2" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Project image</text>
+  </g>
+</svg>
