@@ -14,15 +14,15 @@ html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Seg
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
 .logo img{display:block}
 .site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
-.site-nav a{color:inherit;text-decoration:none}
-.nav-toggle{display:none;background:transparent;border:0;font-size:1.4rem}
+.site-nav a{color:inherit;text-decoration:none;padding:0.5rem;display:block}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.4rem;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
 
 .hero{background:linear-gradient(180deg, rgba(11,90,60,0.06), rgba(11,90,60,0.02));padding:3.5rem 0;text-align:center}
 .hero h1{font-size:2rem;margin:0 0 .5rem}
 .hero .lead{color:var(--muted);margin:0 0 1rem}
 .cta-row{display:flex;gap:.75rem;justify-content:center;margin-top:1rem}
-.btn-primary{background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
-.btn-ghost{border:1px solid #ddd;padding:.5rem .9rem;border-radius:6px;text-decoration:none;color:inherit;background:transparent}
+.btn-primary{background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.btn-ghost{border:1px solid #ddd;padding:.5rem .9rem;border-radius:6px;text-decoration:none;color:inherit;background:transparent;min-height:44px;display:inline-flex;align-items:center}
 
 .section{padding:2rem 0}
 .grid{display:grid;gap:1rem}
@@ -48,6 +48,17 @@ html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Seg
   .site-nav.open{display:block;padding-top:.5rem}
   .site-nav ul{flex-direction:column;gap:.5rem}
   .hero h1{font-size:1.5rem}
+  .cta-row{flex-direction:column;align-items:center}
+  .footer-inner{flex-direction:column;text-align:center;gap:0.5rem}
+}
+@media (max-width:480px){
+  .hero{padding:2rem 0}
+  .hero h1{font-size:1.25rem}
+  .hero .lead{font-size:0.9rem}
+  .section{padding:1.5rem 0}
+  .card{padding:0.75rem}
+  .btn-primary,.btn-ghost{padding:0.5rem 0.75rem;font-size:0.9rem}
+  .contact-form{max-width:100%}
 }
 
 /* Accessibility helpers */
