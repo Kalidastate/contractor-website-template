@@ -15,6 +15,7 @@ img{max-width:100%;height:auto;display:block}
 .site-header{position:sticky;top:0;left:0;right:0;z-index:200;background:#fff;border-bottom:1px solid rgba(15,23,42,0.08);box-shadow:0 8px 24px rgba(15,23,42,0.06)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;flex-wrap:wrap}
 .brand{color:var(--brand);font-weight:700;font-size:1.1rem;text-decoration:none;letter-spacing:0.03em}
+.brand-tagline{display:block;font-size:0.875rem;color:var(--muted);font-weight:500;margin-top:0.25rem;opacity:0.95}
 .logo img{display:block}
 .site-nav{display:flex;justify-content:flex-end;width:100%}
 .site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:flex-end}
