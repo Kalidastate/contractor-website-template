@@ -58,8 +58,8 @@ img{max-width:100%;height:auto;display:block}
 @media (max-width:700px){
   .header-inner{justify-content:center;gap:0.75rem}
   .site-nav{justify-content:center}
-  .site-nav ul{flex-direction:column;gap:0.75rem;align-items:center;width:100%}
-  .site-nav a{width:100%;justify-content:center}
+  .site-nav ul{flex-direction:row;flex-wrap:wrap;gap:0.65rem;justify-content:center;align-items:center;width:100%}
+  .site-nav a{width:auto;justify-content:center}
   .footer-inner{flex-direction:column;text-align:center;gap:0.75rem}
   .section{padding:1.75rem 0}
 }
