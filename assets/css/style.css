@@ -21,12 +21,18 @@ img{max-width:100%;height:auto;display:block}
 .site-nav a{color:inherit;text-decoration:none;padding:0.55rem 0.9rem;border-radius:999px;display:inline-flex;align-items:center;transition:background .2s ease,color .2s ease}
 .site-nav a:hover,.site-nav a:focus-visible{background:rgba(11,90,60,0.1);color:var(--brand)}
 
-.hero{background:linear-gradient(180deg, rgba(11,90,60,0.06), rgba(11,90,60,0.02));padding:3.5rem 0;text-align:center}
-.hero h1{font-size:2rem;margin:0 0 .5rem}
-.hero .lead{color:var(--muted);margin:0 0 1rem}
-.cta-row{display:flex;gap:.75rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
-.btn-primary{background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
-.btn-ghost{border:1px solid #ddd;padding:.5rem .9rem;border-radius:6px;text-decoration:none;color:inherit;background:transparent;min-height:44px;display:inline-flex;align-items:center}
+.hero{position:relative;overflow:hidden;min-height:70vh;display:flex;align-items:center;justify-content:center;padding:0;text-align:center;background:#08120f}
+.hero-slider{position:absolute;inset:0;display:flex;width:300%;animation:hero-slide 10s linear infinite}
+.hero-slide{flex:0 0 100%;background-size:cover;background-position:center;filter:brightness(0.75);transform:scale(1.05)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,90,60,0.32), rgba(11,90,60,0.55));pointer-events:none}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:720px;padding:4rem 1rem}
+.hero h1{font-size:2.5rem;margin:0 0 .75rem;text-shadow:0 20px 35px rgba(0,0,0,0.4)}
+.hero .lead{color:rgba(255,255,255,0.88);margin:0 0 1.25rem;line-height:1.65}
+.cta-row{display:flex;gap:.75rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;z-index:2}
+.btn-primary{background:var(--brand);color:#fff;padding:.75rem 1.2rem;border-radius:8px;text-decoration:none;min-height:50px;display:inline-flex;align-items:center;box-shadow:0 14px 30px rgba(11,90,60,0.18)}
+.btn-ghost{border:1px solid rgba(255,255,255,0.85);padding:.75rem 1.2rem;border-radius:8px;text-decoration:none;color:#fff;background:rgba(255,255,255,0.08);min-height:50px;display:inline-flex;align-items:center;transition:background .2s ease}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:rgba(255,255,255,0.16)}
+@keyframes hero-slide{0%{transform:translateX(0%)}33%{transform:translateX(0%)}50%{transform:translateX(-100%)}83%{transform:translateX(-100%)}100%{transform:translateX(-200%)}}
 
 .section{padding:2rem 0}
 .grid{display:grid;gap:1rem;grid-auto-rows:minmax(0,auto)}
