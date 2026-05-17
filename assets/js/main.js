@@ -21,10 +21,15 @@ document.addEventListener('DOMContentLoaded', function(){
       entries.forEach(function(entry) {
         var video = entry.target;
         if (entry.intersectionRatio >= 0.5) {
-          video.play().catch(function() {});
-        } else {
-          video.pause();
-        }
+            video.muted = true;
+            video.playsInline = true;
+            video.webkitPlaysInline = true;
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
+            video.play().catch(function() {});
+          } else {
+            video.pause();
+          }
       });
     }, { threshold: 0.5 });
 
