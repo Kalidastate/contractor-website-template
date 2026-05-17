@@ -13,4 +13,23 @@ document.addEventListener('DOMContentLoaded', function(){
       form.reset();
     });
   }
+
+  var autoplayVideos = document.querySelectorAll('video.autoplay-video');
+
+  if ('IntersectionObserver' in window && autoplayVideos.length) {
+    var videoObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var video = entry.target;
+        if (entry.intersectionRatio >= 0.5) {
+          video.play().catch(function() {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    autoplayVideos.forEach(function(video) {
+      videoObserver.observe(video);
+    });
+  }
 });
